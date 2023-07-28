@@ -1,0 +1,8 @@
+- Instalación normal de Laravel 8.75
+- Colocar los valores en el .env
+- Ejecutar migraciones y seeders
+    - php artisan migrate --seed
+- Obtener data desde el gps a través de flepsi: 
+    - php artisan fetch:gps-tracker
+- Ruta api para obtener los últimos datos sobre beacons obtenidos
+    - /latest-data

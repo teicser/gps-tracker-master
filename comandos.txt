@@ -1,0 +1,12 @@
+php artisan fetch:gps-tracker
+php artisan beacon:latest-data
+php artisan make:model GpsDevice -mc
+php artisan make:model GpsData -mc
+php artisan make:model BeaconDevice -mc
+php artisan make:model BeaconData -mc
+php artisan make:model GpsBeacon -m
+php artisan make:model Request -m
+
+
+Llenar la base de datos con la información del dispositivo FMT100 que está conectado
+Método para guardar data del gps y la de los beacons
