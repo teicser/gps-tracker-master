@@ -17,6 +17,7 @@ class GpsService
         $gps_data = GpsData::create([
             'gps_device_id' => $gps_device->id,
             'fetch_id' => $fetch->id,
+            'ident' => $data['ident'] ?? null,
             'current_battery' => $data['battery.current'] ?? null,
             'battery_voltage' => $data['battery.voltage'] ?? null,
             'powersource_voltage' => $data['external.powersource.voltage'] ?? null,

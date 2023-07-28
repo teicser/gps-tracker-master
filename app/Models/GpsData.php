@@ -29,10 +29,12 @@ class GpsData extends Model
         'satellites',
         'speed',
         'gps_timestamp',
+        'ident'
     ];
 
     protected $cast = [
         'gps_device_id' => 'integer',
+        'ident' => 'decimal',
         'fetch_id' => 'integer',
         'current_battery' => 'decimal',
         'battery_voltage' => 'decimal',
