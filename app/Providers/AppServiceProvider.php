@@ -25,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        Type::addType('double', 'Doctrine\DBAL\Types\FloatType');
+        //Type::addType('double', 'Doctrine\DBAL\Types\FloatType');
     }
 }
