@@ -55,7 +55,7 @@ class FetchDataFromTracker extends Command
             });
         $verified_imeis = GpsService::exists($imei_list)->toArray();
         $data = $data->filter(function ($item) use ($verified_imeis) {
-            return in_array($item['ident'], $verified_imeis);
+            return in_array($item['ident'], $verified_imeis) && array_key_exists('ain.1', $item);
         });
         $gps_devices =  GpsService::get_gps_devices($verified_imeis);
         foreach ($data as $item) {

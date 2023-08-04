@@ -18,7 +18,7 @@ class GpsService
             'gps_device_id' => $gps_device->id,
             'fetch_id' => $fetch->id,
             'ident' => $data['ident'] ?? null,
-            'current_battery' => $data['battery.current'] ?? null,
+            'current_battery' => $data['battery.level'] ?? null,
             'battery_voltage' => $data['battery.voltage'] ?? null,
             'powersource_voltage' => $data['external.powersource.voltage'] ?? null,
             'is_moving' => $data['movement.status'] ?? null,
